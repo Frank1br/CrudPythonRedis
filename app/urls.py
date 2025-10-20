@@ -8,3 +8,15 @@ urlpatterns = [
     path('tarefas/<int:tarefa_id>/atualizar/', views.atualizar_tarefa),
     path('tarefas/<int:tarefa_id>/deletar/', views.deletar_tarefa),
 ]
+
+# ==================== Uso ====================
+# Instalar: pip install redis
+
+# Criar:
+# POST /tarefas/criar/
+# {"titulo": "Tarefa 1", "descricao": "Descrição"}
+
+# Listar: GET /tarefas/
+# Buscar: GET /tarefas/1/
+# Atualizar: PUT /tarefas/1/atualizar/ {"concluida": true}
+# Deletar: DELETE /tarefas/1/deletar/

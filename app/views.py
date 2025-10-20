@@ -64,3 +64,15 @@ def deletar_tarefa(request, tarefa_id):
         if deleted:
             return JsonResponse({'message': 'Deletada'})
         return JsonResponse({'error': 'Não encontrada'}, status=404)
+    
+    # ==================== Uso ====================
+# Instalar: pip install redis
+
+# Criar:
+# POST /tarefas/criar/
+# {"titulo": "Tarefa 1", "descricao": "Descrição"}
+
+# Listar: GET /tarefas/
+# Buscar: GET /tarefas/1/
+# Atualizar: PUT /tarefas/1/atualizar/ {"concluida": true}
+# Deletar: DELETE /tarefas/1/deletar/
