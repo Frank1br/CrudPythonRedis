@@ -1,4 +1,5 @@
 from django.http import JsonResponse
+from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 import json
 import redis
@@ -64,6 +65,9 @@ def deletar_tarefa(request, tarefa_id):
         if deleted:
             return JsonResponse({'message': 'Deletada'})
         return JsonResponse({'error': 'Não encontrada'}, status=404)
+    
+def index(request):
+    return render(request, 'index.html')
     
     # ==================== Uso ====================
 # Instalar: pip install redis

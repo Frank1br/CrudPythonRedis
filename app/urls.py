@@ -7,6 +7,7 @@ urlpatterns = [
     path('tarefas/<int:tarefa_id>/', views.buscar_tarefa),
     path('tarefas/<int:tarefa_id>/atualizar/', views.atualizar_tarefa),
     path('tarefas/<int:tarefa_id>/deletar/', views.deletar_tarefa),
+    path('', views.index)  # Página inicial
 ]
 
 # ==================== Uso ====================
