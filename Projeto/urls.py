@@ -59,3 +59,8 @@ urlpatterns = [
     path('swagger.json', schema_view.without_ui(cache_timeout=0), name='schema-json'),
 ]
 
+'''
+🏠 Frontend: http://localhost:8000/
+📚 Swagger UI: http://localhost:8000/swagger/
+📖 ReDoc: http://localhost:8000/redoc/
+'''

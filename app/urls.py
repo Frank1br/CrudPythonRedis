@@ -21,3 +21,10 @@ urlpatterns = [
 # Buscar: GET /tarefas/1/
 # Atualizar: PUT /tarefas/1/atualizar/ {"concluida": true}
 # Deletar: DELETE /tarefas/1/deletar/
+
+###Swagger
+'''
+🏠 Frontend: http://localhost:8000/
+📚 Swagger UI: http://localhost:8000/swagger/
+📖 ReDoc: http://localhost:8000/redoc/
+'''

@@ -230,3 +230,11 @@ def deletar_tarefa(request, tarefa_id):
 def index(request):
     """Renderiza a página HTML do ToDo List"""
     return render(request, 'index.html')
+
+###Swagger
+
+'''
+🏠 Frontend: http://localhost:8000/
+📚 Swagger UI: http://localhost:8000/swagger/
+📖 ReDoc: http://localhost:8000/redoc/
+'''
