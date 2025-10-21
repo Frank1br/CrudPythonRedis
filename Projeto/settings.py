@@ -37,12 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
-    'app'
+    'corsheaders',     # ← ADICIONAR ESTE
+    'rest_framework',  # Swagger
+    'drf_yasg',        # Swagger
+    'app',             # Seu app
 ]
 
+
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',  # Adicionar no topo
+    'corsheaders.middleware.CorsMiddleware',  # CORS no topo
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -52,6 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Configurações CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
@@ -70,7 +74,7 @@ ROOT_URLCONF = 'Projeto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # ← Adicione isso
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
