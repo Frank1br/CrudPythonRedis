@@ -142,8 +142,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-'''
-🏠 Frontend: http://localhost:8000/
-📚 Swagger UI: http://localhost:8000/swagger/
-📖 ReDoc: http://localhost:8000/redoc/
-'''
